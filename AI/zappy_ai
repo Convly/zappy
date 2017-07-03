@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import sys
+sys.path.insert(0, './modules/')
+
+import engine
+import parser
+import log
+
+if __name__ == '__main__':
+    port, host, name = parser.parser(sys.argv[1:])
+    core = engine.Engine(port, name, host)
+    core._init()
+    core._start()
+    log.Log('End of execution', color='Blue')
