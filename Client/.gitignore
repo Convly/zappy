@@ -1,9 +1,0 @@
-zappy_client
-Assets
-*.o
-.DS_Store
-#*#
-*~
-*.h
-*.so
-*.a
